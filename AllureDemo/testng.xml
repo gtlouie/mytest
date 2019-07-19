@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNg Parallel" parallel="tests" thread-count="2">
+    <test name="Demo">
+        <classes>
+            <!--<class name="com.louie.allureDemo.SimpleTest"/>-->
+            <!--登录接口-->
+            <class name="com.louie.project.apitestScript.loginApi.LoginApiTest"/>
+            <class name="com.louie.project.apitestScript.loginApi.TokenApiTest"/>
+
+            <!--支付接口-->
+            <class name="com.louie.project.apitestScript.payApi.PayApiTest"/>
+
+
+        </classes>
+    </test>
+</suite>
